@@ -663,11 +663,13 @@ footer {
 
 
 @media (max-width: 768px) {
+
   .inner-menu.show-menu {
         display: block; 
     }
   .section-one {
-    padding: 60px 20px;
+
+    padding: 150px 20px;
     height: auto;
     text-align: center;
   }
@@ -678,6 +680,9 @@ footer {
 
   .section-one .inner-desc {
     font-size: 13px;
+  }
+   .section-two{
+    margin-top: 0px
   }
 
   .section-two, .section-three, .section-four,
@@ -726,6 +731,9 @@ footer {
   .section-one .inner-desc {
     font-size: 12px;
     line-height: 22px;
+  }
+  .section-two{
+    margin-top: 0px
   }
 
   .section-three .inner-title {
