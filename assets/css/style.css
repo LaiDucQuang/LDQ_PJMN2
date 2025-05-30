@@ -124,6 +124,7 @@
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    
 }
 
 .section-one .inner-title{
@@ -152,7 +153,7 @@
 .section-two{
     padding-bottom: 0px;
     padding-top: 30px;
-    margin-top: -220px;
+    margin-top: -140px;
     z-index: 9;
 }
 .section-two .inner-icon:hover{
@@ -619,6 +620,9 @@ footer {
   .section-one .inner-desc {
     font-size: 14px;
     line-height: 24px;
+  }
+  .section-two{
+    margin-top: -100px;
   }
 
   .section-two .inner-box,
