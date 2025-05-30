@@ -609,6 +609,9 @@ footer {
   .inner-menu.show-menu {
         display: block; 
     }
+  .section-one{
+    padding-top:150px ;
+  }
   .section-one .inner-title {
     font-size: 28px;
   }
