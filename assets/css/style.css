@@ -610,7 +610,7 @@ footer {
         display: block; 
     }
   .section-one{
-    padding-top:150px ;
+    padding:150px ;
   }
   .section-one .inner-title {
     font-size: 28px;
