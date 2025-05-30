@@ -59,6 +59,7 @@
     justify-content: space-between;
     padding: 20px 20px;
     align-items: center;
+    position: relative;
 }
 
 .header .inner-main .inner-logo img{
@@ -95,6 +96,19 @@
 .header .inner-menu ul li a.active{
     color: var(--color-two);
 }
+
+.menu-trigger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 /* End header */
 
 
@@ -421,6 +435,7 @@
     font-size: 28px;
     margin-bottom: 25px;
 }
+
 .blog-entries .inner-content .inner-desc{
     color: #777;
     font-weight: 400;
@@ -440,6 +455,20 @@
     color: #777;
     margin-bottom: 20px;
     
+}
+
+.blog-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Khoảng cách giữa các entries */
+}
+
+.blog-entries .inner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
 }
 /*End blog-entries */
 
@@ -572,3 +601,157 @@ footer {
     }
   }
 /*End footer */
+
+
+/* responsive */
+
+@media (max-width: 991px) {
+  .inner-menu.show-menu {
+        display: block; 
+    }
+  .section-one .inner-title {
+    font-size: 28px;
+  }
+
+  .section-one .inner-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .section-two .inner-box,
+  .section-three .inner-box,
+  .Pricing-plans .inner-box,
+  .contact-us .inner-text {
+    padding: 20px;
+  }
+
+  .Pricing-plans .inner-box .inner-box-price .inner-price {
+    font-size: 24px;
+  }
+
+  .header .inner-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .inner-menu ul li {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .header .inner-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+
+  .section-four .inner-box .inner-desc {
+    max-width: 90%;
+  }
+
+    .inner-menu {
+        display: none; 
+    }
+
+    .menu-trigger {
+        display: inline-block; 
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .inner-menu.show-menu {
+        display: block; 
+    }
+  .section-one {
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .section-one .inner-title {
+    font-size: 24px;
+  }
+
+  .section-one .inner-desc {
+    font-size: 13px;
+  }
+
+  .section-two, .section-three, .section-four,
+  .Pricing-plans, .blog-entries, .contact-us {
+    padding: 50px 20px;
+  }
+
+  .section-two .inner-box,
+  .section-four .inner-box,
+  .Pricing-plans .inner-box {
+    margin-bottom: 40px;
+  }
+
+  .pricing-tables .inner-item {
+    padding: 60px 0;
+  }
+
+  .inner-form input,
+  .inner-form textarea {
+    font-size: 13px;
+  }
+
+  footer .social li {
+    margin: 0 6px;
+  }
+  .blog-entries .sp{
+  margin: 20px 0 ;
+}
+}
+
+
+
+@media (max-width: 480px) {
+   .inner-menu.show-menu {
+        display: block; 
+    }
+  .button, .button-two {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .section-one .inner-title {
+    font-size: 20px;
+  }
+
+  .section-one .inner-desc {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .section-three .inner-title {
+    font-size: 28px;
+  }
+
+  .section-four .inner-content .inner-title,
+  .Pricing-plans .inner-content .inner-title,
+  .contact-us .inner-content .inner-title {
+    font-size: 24px;
+  }
+
+  .Pricing-plans .inner-box .inner-box-price .inner-price {
+    font-size: 20px;
+  }
+
+  .pricing-tables .inner-number {
+    font-size: 28px;
+  }
+
+  .pricing-tables .inner-title {
+    font-size: 16px;
+  }
+    .blog-entries .sp{
+  margin: 20px 0 ;
+}
+}
+
+/*End responsive */
